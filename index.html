@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MITA Magazine — London electronic music editorial, event coverage and creative production.">
+  <meta name="theme-color" content="#08080b">
+  <title>MITA Magazine — Music Is The Answer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="page-transition" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand magnetic" href="#hero" aria-label="MITA Magazine home">
+      <img src="assets/logos/mita-logo-white.svg" alt="" class="brand-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'">
+      <span class="brand-fallback">MITA</span>
+      <span class="brand-subtitle">Music Is The Answer</span>
+    </a>
+
+    <button class="menu-toggle magnetic" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span class="sr-only">Open menu</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#audience">Audience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <aside class="page-index" aria-label="Presentation progress">
+    <span id="page-current">01</span>
+    <span class="page-rule"></span>
+    <span id="page-total">11</span>
+  </aside>
+
+  <div class="progress-bar" aria-hidden="true"><span></span></div>
+
+  <main>
+    <section class="panel hero" id="hero" data-title="Home">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-fallback media-cover" style="--image:url('assets/images/hero-poster.jpg')"></div>
+      <div class="hero-gradient"></div>
+      <div class="hero-orb" data-parallax="0.08"></div>
+
+      <div class="hero-content">
+        <p class="kicker reveal">London · Ibiza · Europe</p>
+        <h1 class="hero-title" aria-label="Music Is The Answer">
+          <span class="title-line"><span>Music</span></span>
+          <span class="title-line outline"><span>Is The</span></span>
+          <span class="title-line italic"><span>Answer.</span></span>
+        </h1>
+        <div class="hero-bottom reveal">
+          <p>Independent electronic music editorial, event coverage and visual storytelling for artists, venues and culture-shaping brands.</p>
+          <a class="round-link magnetic" href="#portfolio" aria-label="Explore selected work"><span>Explore<br>our work</span><b>↘</b></a>
+        </div>
+      </div>
+
+      <div class="hero-side-note">Editorial / Photography / Film / Social</div>
+    </section>
+
+    <section class="panel about" id="about" data-title="Who We Are">
+      <div class="panel-label reveal"><span>02</span> Who We Are</div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="kicker">Independent by nature</p>
+          <h2>We capture the people, places and energy shaping electronic music culture.</h2>
+          <p class="lead">MITA Magazine is a London-born media platform and creative production studio connecting artists, events, venues and audiences through distinctive storytelling.</p>
+        </div>
+        <figure class="portrait-frame reveal tilt-card">
+          <div class="media-cover" style="--image:url('assets/images/about-team.jpg')"></div>
+          <figcaption><span>MITA on location</span><span>London / 2026</span></figcaption>
+        </figure>
+      </div>
+      <div class="marquee" aria-hidden="true"><div>Music Is The Answer — Music Is The Answer — Music Is The Answer —&nbsp;</div></div>
+    </section>
+
+    <section class="panel services" id="services" data-title="What We Do">
+      <div class="panel-label reveal"><span>03</span> What We Do</div>
+      <div class="services-head reveal">
+        <h2>One media partner.<br><em>Every touchpoint.</em></h2>
+        <p>From the first announcement to the final aftermovie, we build connected content that gives every project a longer life.</p>
+      </div>
+      <div class="service-accordion reveal">
+        <article class="service-row active">
+          <button type="button"><span>01</span><strong>Event Coverage</strong><i>+</i></button>
+          <div class="service-detail"><p>Photography, event reviews, vertical video, live social publishing and rapid-turnaround edits from the venue floor.</p><div class="service-image media-cover" style="--image:url('assets/images/events/event-coverage.jpg')"></div></div>
+        </article>
+        <article class="service-row">
+          <button type="button"><span>02</span><strong>Artist Interviews</strong><i>+</i></button>
+          <div class="service-detail"><p>Written, video and vlog-style interviews designed to reveal the artist behind the release and create reusable content.</p><div class="service-image media-cover" style="--image:url('assets/images/artists/artist-interview.jpg')"></div></div>
+        </article>
+        <article class="service-row">
+          <button type="button"><span>03</span><strong>Creative Production</strong><i>+</i></button>
+          <div class="service-detail"><p>Campaign concepts, photo and video production, venue storytelling, branded formats and social-first creative direction.</p><div class="service-image media-cover" style="--image:url('assets/images/events/creative-production.jpg')"></div></div>
+        </article>
+        <article class="service-row">
+          <button type="button"><span>04</span><strong>Media Amplification</strong><i>+</i></button>
+          <div class="service-detail"><p>Editorial publishing, reposting, community distribution and targeted influencer support across the electronic music ecosystem.</p><div class="service-image media-cover" style="--image:url('assets/images/events/media-amplification.jpg')"></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel coverage" id="coverage" data-title="Event Coverage">
+      <div class="coverage-bg media-cover" style="--image:url('assets/images/events/coverage-fullscreen.jpg')"></div>
+      <div class="coverage-overlay"></div>
+      <div class="panel-label light reveal"><span>04</span> Event Coverage</div>
+      <div class="coverage-content reveal">
+        <p class="kicker">Inside the moment</p>
+        <h2>Not just what happened.<br><em>How it felt.</em></h2>
+        <p>Atmosphere, scale, detail and human emotion captured in one coherent visual story.</p>
+        <div class="chips"><span>Photography</span><span>Aftermovies</span><span>Live Social</span><span>Reviews</span></div>
+      </div>
+    </section>
+
+    <section class="panel portfolio" id="portfolio" data-title="Photography">
+      <div class="panel-label reveal"><span>05</span> Selected Work</div>
+      <div class="portfolio-head reveal">
+        <h2>Photography<br><em>with a pulse.</em></h2>
+        <div class="filters" role="group" aria-label="Filter portfolio">
+          <button class="active" type="button" data-filter="all">All</button>
+          <button type="button" data-filter="events">Events</button>
+          <button type="button" data-filter="artists">Artists</button>
+          <button type="button" data-filter="backstage">Backstage</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid reveal">
+        <button class="work-card work-tall" type="button" data-category="events" data-full="assets/images/events/2I6A5328.jpg" data-caption="MITA event photography 1">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5328.jpg')"></span><small>Events</small><strong>Live 01</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A4785.jpg" data-caption="MITA event photography 2">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A4785.jpg')"></span><small>Events</small><strong>Live 02</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A4878.jpg" data-caption="MITA event photography 3">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A4878.jpg')"></span><small>Events</small><strong>Live 03</strong>
+        </button>
+        <button class="work-card work-wide" type="button" data-category="events" data-full="assets/images/events/2I6A5099.jpg" data-caption="MITA event photography 4">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5099.jpg')"></span><small>Events</small><strong>Live 04</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5233.jpg" data-caption="MITA event photography 5">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5233.jpg')"></span><small>Events</small><strong>Live 05</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5426.jpg" data-caption="MITA event photography 6">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5426.jpg')"></span><small>Events</small><strong>Live 06</strong>
+        </button>
+        <button class="work-card work-tall" type="button" data-category="events" data-full="assets/images/events/2I6A5089.jpg" data-caption="MITA event photography 7">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5089.jpg')"></span><small>Events</small><strong>Live 07</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5082.jpg" data-caption="MITA event photography 8">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5082.jpg')"></span><small>Events</small><strong>Live 08</strong>
+        </button>
+        <button class="work-card work-wide" type="button" data-category="events" data-full="assets/images/events/2I6A5000.jpg" data-caption="MITA event photography 9">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5000.jpg')"></span><small>Events</small><strong>Live 09</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/AA0I3540.jpg" data-caption="MITA event photography 10">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3540.jpg')"></span><small>Events</small><strong>Live 10</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5519.jpg" data-caption="MITA event photography 11">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5519.jpg')"></span><small>Events</small><strong>Live 11</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/AA0I3668.jpg" data-caption="MITA event photography 12">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3668.jpg')"></span><small>Events</small><strong>Live 12</strong>
+        </button>
+        <button class="work-card work-tall" type="button" data-category="events" data-full="assets/images/events/AA0I3782.jpg" data-caption="MITA event photography 13">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3782.jpg')"></span><small>Events</small><strong>Live 13</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5061.jpg" data-caption="MITA event photography 14">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5061.jpg')"></span><small>Events</small><strong>Live 14</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/AA0I3503.jpg" data-caption="MITA event photography 15">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3503.jpg')"></span><small>Events</small><strong>Live 15</strong>
+        </button>
+        <button class="work-card work-wide" type="button" data-category="events" data-full="assets/images/events/AA0I3508.jpg" data-caption="MITA event photography 16">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3508.jpg')"></span><small>Events</small><strong>Live 16</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A4844.jpg" data-caption="MITA event photography 17">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A4844.jpg')"></span><small>Events</small><strong>Live 17</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5524.jpg" data-caption="MITA event photography 18">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5524.jpg')"></span><small>Events</small><strong>Live 18</strong>
+        </button>
+        <button class="work-card work-tall" type="button" data-category="events" data-full="assets/images/events/2I6A4860.jpg" data-caption="MITA event photography 19">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A4860.jpg')"></span><small>Events</small><strong>Live 19</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5502.jpg" data-caption="MITA event photography 20">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5502.jpg')"></span><small>Events</small><strong>Live 20</strong>
+        </button>
+        <button class="work-card work-wide" type="button" data-category="events" data-full="assets/images/events/2I6A4973.jpg" data-caption="MITA event photography 21">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A4973.jpg')"></span><small>Events</small><strong>Live 21</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5490.jpg" data-caption="MITA event photography 22">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5490.jpg')"></span><small>Events</small><strong>Live 22</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/AA0I3736.jpg" data-caption="MITA event photography 23">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3736.jpg')"></span><small>Events</small><strong>Live 23</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5362.jpg" data-caption="MITA event photography 24">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5362.jpg')"></span><small>Events</small><strong>Live 24</strong>
+        </button>
+        <button class="work-card work-tall" type="button" data-category="events" data-full="assets/images/events/2I6A5415.jpg" data-caption="MITA event photography 25">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5415.jpg')"></span><small>Events</small><strong>Live 25</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/AA0I3739.jpg" data-caption="MITA event photography 26">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3739.jpg')"></span><small>Events</small><strong>Live 26</strong>
+        </button>
+        <button class="work-card work-wide" type="button" data-category="events" data-full="assets/images/events/AA0I3758.jpg" data-caption="MITA event photography 27">
+          <span class="media-cover" style="--image:url('assets/images/events/AA0I3758.jpg')"></span><small>Events</small><strong>Live 27</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A4953.jpg" data-caption="MITA event photography 28">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A4953.jpg')"></span><small>Events</small><strong>Live 28</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5482.jpg" data-caption="MITA event photography 29">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5482.jpg')"></span><small>Events</small><strong>Live 29</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5126.jpg" data-caption="MITA event photography 30">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5126.jpg')"></span><small>Events</small><strong>Live 30</strong>
+        </button>
+        <button class="work-card work-tall" type="button" data-category="events" data-full="assets/images/events/2I6A5484.jpg" data-caption="MITA event photography 31">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5484.jpg')"></span><small>Events</small><strong>Live 31</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5422.jpg" data-caption="MITA event photography 32">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5422.jpg')"></span><small>Events</small><strong>Live 32</strong>
+        </button>
+        <button class="work-card" type="button" data-category="events" data-full="assets/images/events/2I6A5455.jpg" data-caption="MITA event photography 33">
+          <span class="media-cover" style="--image:url('assets/images/events/2I6A5455.jpg')"></span><small>Events</small><strong>Live 33</strong>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel interview" id="interviews" data-title="Interviews">
+      <div class="panel-label reveal"><span>06</span> Artist Interviews</div>
+      <div class="interview-stage">
+        <div class="interview-photo media-cover reveal" style="--image:url('assets/images/artists/featured-artist.jpg')"></div>
+        <div class="interview-quote reveal">
+          <span class="quote-mark">“</span>
+          <blockquote>The strongest artist stories begin where the press release ends.</blockquote>
+          <p>Long-form editorial, short-form social and filmed conversations built around voice, identity and creative process.</p>
+          <a href="#contact" class="line-link magnetic">Create an artist feature <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel film" id="video" data-title="Video Production">
+      <video class="showreel-video" autoplay muted loop playsinline poster="assets/images/showreel-poster.jpg">
+        <source src="assets/video/showreel.mp4" type="video/mp4">
+      </video>
+      <div class="showreel-fallback media-cover" style="--image:url('assets/images/showreel-poster.jpg')"></div>
+      <div class="film-overlay"></div>
+      <div class="panel-label light reveal"><span>07</span> Video Production</div>
+      <div class="film-copy reveal">
+        <p class="kicker">Watch the showreel</p>
+        <h2>Movement.<br>Sound.<br><em>Impact.</em></h2>
+        <button class="play-button magnetic" type="button" aria-label="Play showreel"><span>▶</span></button>
+      </div>
+      <div class="film-formats reveal"><span>AFTERMOVIES</span><span>REELS</span><span>INTERVIEWS</span><span>LIVE EDITS</span></div>
+    </section>
+
+    <section class="panel network" id="network" data-title="Events & Venues">
+      <div class="panel-label reveal"><span>08</span> Events & Venues Covered</div>
+      <div class="network-copy reveal"><p class="kicker">Our world</p><h2>From underground rooms to landmark stages.</h2></div>
+      <div class="logo-wall reveal">
+        <div><img src="assets/logos/fabric.svg" alt="Fabric London" onerror="this.replaceWith(document.createTextNode('FABRIC LONDON'))"></div>
+        <div><img src="assets/logos/silverworks.svg" alt="Silverworks Island" onerror="this.replaceWith(document.createTextNode('SILVERWORKS ISLAND'))"></div>
+        <div><img src="assets/logos/magazine-open-air.svg" alt="Magazine Open Air" onerror="this.replaceWith(document.createTextNode('MAGAZINE OPEN AIR'))"></div>
+        <div><img src="assets/logos/broadwick-live.svg" alt="Broadwick Live" onerror="this.replaceWith(document.createTextNode('BROADWICK LIVE'))"></div>
+        <div><img src="assets/logos/ironworks.svg" alt="Ironworks" onerror="this.replaceWith(document.createTextNode('IRONWORKS'))"></div>
+        <div><img src="assets/logos/partner-06.svg" alt="Partner logo" onerror="this.replaceWith(document.createTextNode('YOUR NEXT PARTNER'))"></div>
+      </div>
+      <p class="disclaimer reveal">Use this area for events, venues and partners you have officially worked with or editorially covered.</p>
+    </section>
+
+    <section class="panel audience" id="audience" data-title="Audience">
+      <div class="panel-label reveal"><span>09</span> Audience & Statistics</div>
+      <div class="audience-intro reveal">
+        <p class="kicker">Culture travels</p>
+        <h2>Built in London.<br><em>Connected globally.</em></h2>
+        <p>Replace the demonstration figures below with your latest verified audience data.</p>
+      </div>
+      <div class="stat-grid reveal">
+        <article><strong data-count="50" data-suffix="K+">0</strong><span>Monthly reach</span><i></i></article>
+        <article><strong data-count="120" data-suffix="+">0</strong><span>Events covered</span><i></i></article>
+        <article><strong data-count="80" data-suffix="+">0</strong><span>Artist features</span><i></i></article>
+        <article><strong data-count="12" data-suffix="">0</strong><span>Markets reached</span><i></i></article>
+      </div>
+    </section>
+
+    <section class="panel collaborate" id="collaborate" data-title="Work With Us">
+      <div class="collab-photo media-cover" style="--image:url('assets/images/work-with-us.jpg')"></div>
+      <div class="collab-panel">
+        <div class="panel-label dark reveal"><span>10</span> Work With Us</div>
+        <div class="collab-copy reveal">
+          <p class="kicker">Ideas deserve an audience</p>
+          <h2>Let’s create something people remember.</h2>
+          <p>We collaborate with promoters, venues, festivals, artists, management teams, PR agencies and culture-led brands.</p>
+          <ul><li>Editorial partnerships</li><li>Event media packages</li><li>Creative campaigns</li><li>Ongoing content retainers</li></ul>
+          <a href="#contact" class="dark-button magnetic">Start a conversation <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel contact" id="contact" data-title="Contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="panel-label reveal"><span>11</span> Contact</div>
+      <div class="contact-main reveal">
+        <p class="kicker">London / Available worldwide</p>
+        <h2>Have a story<br>worth <em>sharing?</em></h2>
+        <a class="email magnetic" href="mailto:hello@mitamagazine.com">hello@mitamagazine.com</a>
+      </div>
+      <footer class="contact-footer reveal">
+        <div><span>Instagram</span><a href="#">@mitamagazine</a></div>
+        <div><span>Website</span><a href="https://mitamagazine.com">mitamagazine.com</a></div>
+        <div><span>Based in</span><p>London, United Kingdom</p></div>
+        <div><span>Copyright</span><p>© <span id="year"></span> MITA Magazine</p></div>
+      </footer>
+    </section>
+  </main>
+
+  <dialog class="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+    <img src="" alt="">
+    <p></p>
+  </dialog>
+
+  <dialog class="video-modal">
+    <button class="video-close" type="button" aria-label="Close video">×</button>
+    <video controls playsinline poster="assets/images/showreel-poster.jpg"><source src="assets/video/showreel.mp4" type="video/mp4"></video>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
